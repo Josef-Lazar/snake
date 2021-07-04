@@ -61,7 +61,7 @@ function apple_spawn () {
         apple_y = apple_available_y[apple_available_space]
     } else {
         basic.pause(500)
-        basic.showString("VYHRA!")
+        basic.showString("YOU WIN!")
         reset()
     }
 }
@@ -71,7 +71,7 @@ function snake_death () {
             basic.showNumber(snake_body_x.length)
             basic.clearScreen()
             basic.pause(500)
-            basic.showString("KONEC")
+            basic.showString("GAME OVER")
             reset()
         }
     }
